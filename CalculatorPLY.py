@@ -25,7 +25,7 @@ t_MULTIPLY = '\*'
 
 def t_NUM(t):
      #"(([0-9]+\.[0-9]+) | [0-9]+)"
-     "-?[0-9]+(\.[0-9]+)?"
+     "[0-9]+(\.[0-9]+)?"
      t.value = float(t.value)
      return t
 
@@ -47,6 +47,7 @@ lexer = lex.lex()
 precedence = (
     ('left','SUM', 'SUBTRACT'),
     ('left','DIVIDE', 'MULTIPLY'),
+    ('right', 'NEGATIVE'),
     )
 
 def p_expressao(p):
@@ -66,8 +67,13 @@ def p_expressao(p):
     else:
          p[0] = p[1]
 
+def p_expressao_num_negativo(p):
+    '''expressao : SUBTRACT expressao %prec NEGATIVE'''
+    p[0] = -p[2]
+
 def p_error(p):
     print("Syntax error in input!")
+    print(p)
 #############################################################################################
 
 parser = yacc.yacc()
