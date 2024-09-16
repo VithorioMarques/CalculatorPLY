@@ -1,0 +1,41 @@
+Examples of accepted expressions:
+
+# Expression 1
+result1 = -7.5 * (3.2 - (-1.5))
+# Result: -35.25
+
+# Expression 2
+result2 = (-15.8) / 4.0 + (-9.3)
+# Result: -13.25
+
+# Expression 3
+result3 = 25.6 - (-7.4) / 2.0
+# Result: 29.3
+
+# Expression 4
+result4 = (-3.6) * (-3.6) + 2 * (-4.1)
+# Result: 4.76
+
+# Expression 5
+result5 = (-8.4 + (-5.6)) / (-2.0) - 1.5
+# Result: 5.5
+
+# Expression 6
+result6 = -6.3 * (2.2 + (-1.8)) - (-3.5)
+# Result: 0.98
+
+# Expression 7
+result7 = (10.5 - (-2.5)) / (-3.0) * (-4.0)
+# Result: 17.33
+
+# Expression 8
+result8 = -7.0 * (-1.5) - 8.1
+# Result: 2.4
+
+# Expression 9
+result9 = (-5.0) * (-5.0) * (-5.0) - ((-2.5) + 3.0) * ((-2.5) + 3.0)
+# Result: -125.25
+
+# Expression 10
+result10 = (-12.6) / 3.0 + (-4.0) - (-1.2)
+# Result: -7.0
